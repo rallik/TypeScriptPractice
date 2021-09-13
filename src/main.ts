@@ -47,3 +47,40 @@ const mac2015: Computer = {
 const pc2020: Computer = {
     brand: 'HP'
 }
+
+/* Functions inside interfaces */
+interface Student {
+    firstname: string,
+    lastname: string,
+    gpa: number,
+    getFullName(): string;
+}
+
+const student_1: Student = {
+    firstname: 'John',
+    lastname: 'Smith',
+    gpa: 3.7,
+    getFullName() {
+        return this.firstname + ' ' + this.lastname;
+    }
+}
+
+console.log(student_1.getFullName())
+
+/* Interfaces with Classes */
+
+//Naming convention for interface to avoid same name as class
+interface DogInterface {
+    breed: string,
+    age: number
+}
+
+/* Unions */
+
+let username: string = 'alex';
+
+//if you want multiple types
+let pageName: string | number = '1';
+
+//using null
+let errorMessage: string | null = null;

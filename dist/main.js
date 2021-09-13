@@ -26,3 +26,18 @@ var mac2015 = {
 var pc2020 = {
     brand: 'HP'
 };
+var student_1 = {
+    firstname: 'John',
+    lastname: 'Smith',
+    gpa: 3.7,
+    getFullName: function () {
+        return this.firstname + ' ' + this.lastname;
+    }
+};
+console.log(student_1.getFullName());
+/* Unions */
+var username = 'alex';
+//if you want multiple types
+var pageName = '1';
+//using null
+var errorMessage = null;
